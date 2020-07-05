@@ -45,3 +45,16 @@ console.log(num);
 var num1 = 10;
 num1 += 5;      // 意思同: num1 = num1 + 5;
 console.log(num1);
+
+// 自訂函式 又被叫做 function 或 method
+// 教學文檔: https://www.w3schools.com/js/js_functions.asp
+// 語法: 函式 函式名稱(參數1,參數2,.... )
+
+function functionA () {
+    console.log("我是FunctionA");
+}
+
+// 自訂函式需要被呼叫才回執行
+// 呼叫自訂函式(重複寫就會被呼叫很多次)
+functionA();
+functionA();
