@@ -3,13 +3,34 @@
 
 // 文件.使用ID取得元素("元素名稱").插入html="欲插入之內容"
 // 教學文檔: https://www.w3schools.com/js/js_intro.asp
-document.getElementById("box1").innerHTML="Hello~"
+document.getElementById("box1").innerHTML = "Hello~"
 // jQuery寫法: $("#box1").innerHTML="Hello~"
 
 // 定義變數 Variables : 用來儲存資料
 // 教學文檔: https://www.w3schools.com/js/js_variables.asp
 // 資料類型(基本常用到的4大類型):
-var a = 100;       //整數
+var a = 20;       //整數
 var b = 1.5;       //浮點數字
 var c = "文字";    //文字字串
 var d = true;      //布林值: true / false
+
+// 取得變數值
+console.log(a);
+
+// 運算子1: 加減乘除餘 + - * / %
+
+// 程式內的等號"=", 表"指定"
+// 等號右邊的資料先執行完成後, 才會套回給等號左邊的值使用
+a = a + 8;
+console.log("a = " + a);       //得到結果會是:"a=(20+8)=28"
+
+// 運算子2: ++ 遞增1, --遞減1
+var e = 7;
+e++
+console.log(e)
+
+// 運算子3: ** 次方
+var f = 5;
+f = f**3;   // **N : N次方
+
+console.log(f);
