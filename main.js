@@ -77,4 +77,40 @@ function multi(X, Y){
 } 
 //  呼叫含有參數的自訂函式
 // 自訂函式名稱(參數1,參數2)
-multi(39, 17)
+multi(39, 17);
+
+
+// 物件 Object
+// 教學文檔: https://www.w3schools.com/js/js_objects.asp
+// 物件 = { 物件名稱1: 值1, 物件名稱: 值2.... }
+
+var Car = {
+  brand: "BMW",
+  number: 5000,
+  // 物件也可以用函式設定
+  drive: function(){
+    console.log("開車中.....");
+  }
+};
+
+console.log("品牌:" + Car.brand);
+Car.drive();
+
+
+
+// 事件練習
+var box2 = document.getElementById("box2");
+ 
+// 用匿名函式寫
+box2.onclick = () => {
+  console.log("點擊!");
+}
+// 意思同: box2.onclick = function(){}
+
+box2.onmouseenter = () => {
+  console.log("滑鼠滑入(onmouseenter)");
+}
+
+box2.onmouseleave = () => {
+  console.log("滑鼠滑出(onmouseleave)");
+}
