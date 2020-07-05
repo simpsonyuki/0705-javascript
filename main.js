@@ -58,3 +58,23 @@ function functionA () {
 // 呼叫自訂函式(重複寫就會被呼叫很多次)
 functionA();
 functionA();
+
+// 自訂函式參數用法
+function plusTen(numA) { 
+
+    numA += 10;
+    
+    console.log("數字加10的結果:" + numA);
+ }
+
+// 呼叫含有參數的自訂函式
+// 自訂函式名稱(參數值)
+plusTen(5);
+
+
+function multi(X, Y){
+  console.log("數字相乘:" + X*Y);  
+} 
+//  呼叫含有參數的自訂函式
+// 自訂函式名稱(參數1,參數2)
+multi(39, 17)
