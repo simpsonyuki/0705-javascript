@@ -29,8 +29,19 @@ var e = 7;
 e++
 console.log(e)
 
-// 運算子3: ** 次方
+// ES6 指數符號
+// **:  次方
 var f = 5;
-f = f**3;   // **N : N次方
+f = f ** 3;   // **N : N次方
 
 console.log(f);
+
+// 指定運算子
+var num = 10;
+
+num **= 5;      // 意思同: num = num ** 5; 
+console.log(num);
+
+var num1 = 10;
+num1 += 5;      // 意思同: num1 = num1 + 5;
+console.log(num1);
