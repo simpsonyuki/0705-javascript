@@ -146,7 +146,7 @@ box2.onmouseleave = () => {
 
   
 // 比較運算子 
-
+// 教學文檔: https://www.w3schools.com/js/js_comparisons.asp
 // 大於 小於 大於等於 小於等於 等於 不等於 > < >= <= == !=
 // 得到的值會是布林值: true 或 false
 var testA = 100;
@@ -163,3 +163,8 @@ var testD = "7";    //有引號: 文字7
 console.log("==的結果: " + (testC == testD));   // == 只會比較"值"
 console.log("===的結果: " + (testC === testD)); // === 同時比較"值" 和 "類型"
 
+
+// 邏輯運算子
+// !: 將布林值顛倒
+var testE = true;
+console.log("顛倒: " + (!testE));
