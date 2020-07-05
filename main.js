@@ -114,3 +114,33 @@ box2.onmouseenter = () => {
 box2.onmouseleave = () => {
   console.log("滑鼠滑出(onmouseleave)");
 }
+
+
+// 陣列 Array : 一次儲存多筆資料
+// 教學文檔: https://www.w3schools.com/js/js_arrays.asp
+// 陣列名稱 [資料0, 資料1, 資料2.... ]
+// 注意: 陣列的資料筆數是用0開始算的, 不是1
+
+// 儲存資料方式比較
+// 1. 定義變數: 一筆資料就需要設定一個變數
+  // var NumberA = 20;
+  // var NumberB = 100;
+  // var NumberC = 60;
+
+// 2. 定義物件: 只須設定一個變數, 但每筆資料都需要命名
+  // var ObjectNumber = {
+  //   A = 20,
+  //   B = 100,
+  //   C = 60
+  // }
+
+// 3. 陣列: 單純儲存資料的值
+  var numbers = [20, 100, 60];
+  console.log("第1筆資料:" + numbers[0]);
+  
+  // 修改陣列的方法
+  numbers[1] = 3;
+  console.log("第2筆資料:" + numbers[1]);
+
+  console.log("陣列的長度(儲存的資料筆數):" + numbers.length);
+
