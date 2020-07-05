@@ -144,3 +144,12 @@ box2.onmouseleave = () => {
 
   console.log("陣列的長度(儲存的資料筆數):" + numbers.length);
 
+  
+// 比較運算子 
+// 大於 小於 大於等於 小於等於 等於 不等於 > < >= <= == !=
+// 得到的值會是布林值: true 或 false
+var testA = 100;
+var testB = 50;
+
+console.log(testA == testB);
+
