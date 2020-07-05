@@ -164,7 +164,23 @@ console.log("==的結果: " + (testC == testD));   // == 只會比較"值"
 console.log("===的結果: " + (testC === testD)); // === 同時比較"值" 和 "類型"
 
 
-// 邏輯運算子
+// 邏輯運算子: 都是用在比較"布林值"
 // !: 將布林值顛倒
 var testE = true;
 console.log("顛倒: " + (!testE));
+
+// &&: 並且
+// 只要有一方有false, 結果就會是false
+// 4種狀況
+console.log(true && true);       //結果會是: true
+console.log(true && false);      //結果會是: false
+console.log(false && true);      //結果會是: false
+console.log(false && false);     //結果會是: false
+
+// ||: 或者
+// 只要有一方有true, 結果就會是true
+// 4種狀況
+console.log(true || true);       //結果會是: true
+console.log(true || false);      //結果會是: true
+console.log(false || true);      //結果會是: true
+console.log(false || false);     //結果會是: false
