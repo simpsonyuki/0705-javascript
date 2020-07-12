@@ -263,3 +263,17 @@ score.onchange = () => {
 for (let i = 0; i < 10; i++) {
   console.log("迴圈：" + i);
 }
+
+// 陣列搭配迴圈用法
+
+var products = ["冰美式", "星冰樂", "巧克力可可"]
+for (let i = 0; i < products.length; i++) {
+  console.log(products[i]);
+}
+
+var ps = document.getElementsByClassName("products");
+// console.log(ps);
+
+for (let i = 0; i < ps.length; i++) {
+  ps[i].innerText=products[i];
+}
