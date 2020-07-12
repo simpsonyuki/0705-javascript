@@ -217,3 +217,14 @@ if (boolTest2) {
   console.log("boolTese2布林值為false!");
 }
 // 當布林值為false, 程式會跳過if, 直接執行else
+
+
+// 判斷式實際應用練習
+var score = document.getElementById("score");
+var result = document.getElementById("result");
+
+// 用onchange測試是否能成功執行動作
+// onchange :當有所變更時則執行後方程式內容
+score.onchange = () => {
+  result.innerText="變更中...";
+}
