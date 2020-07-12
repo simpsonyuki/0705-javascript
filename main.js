@@ -288,7 +288,7 @@ const pi = 3.14159;
 // https://www.w3schools.com/js/js_let.asp
 // let 和 var 常被擺在一起比較, 最大的差異是:
 // let 在同一區塊(層級)內, 不能擁有重複的名稱, 否則會導致系統錯誤
-// 且 let 只在所屬區塊(層級)內有效
+// 且 let 只在其所屬區塊(層級)內有效
 
 var countA = 10;
 var countA = 8;
@@ -301,3 +301,16 @@ var countA = 8;
 console.log("在let層級外的得出countA值為: " + countA);
 
 // let 只在所屬區塊(層級)內有效
+
+var countB = 99;
+{
+  var countB = 77;
+}
+console.log(countB)   // var數值會被後者取代, 因此得出結果會是77
+
+
+let countC = 99;
+{
+  let countC = 77;
+}
+console.log(countC)   // let數值只在其所屬區塊內有效, 因此得出結果會是99
