@@ -282,4 +282,22 @@ for (let i = 0; i < ps.length; i++) {
 // 特色不能被變更
 // https://www.w3schools.com/js/js_const.asp
 const pi = 3.14159;
-pi = 5;   // 執行到此會出現錯誤, 因為pi的值必須為3.14159, 且不能被變更
+//pi = 5;   // 執行到此會出現錯誤, 因為pi的值必須為3.14159, 且不能被變更
+
+// let
+// https://www.w3schools.com/js/js_let.asp
+// let 和 var 常被擺在一起比較, 最大的差異是:
+// let 在同一區塊(層級)內, 不能擁有重複的名稱, 否則會導致系統錯誤
+// 且 let 只在所屬區塊(層級)內有效
+
+var countA = 10;
+var countA = 8;
+//let countA = 8;    //瀏覽器執行到這裡會壞掉
+
+{
+  let countA = 6;    // 用大括號將層級區分開來就不會有問題
+  console.log("在與let同一層級得出的countA值為: " + countA);
+}
+console.log("在let層級外的得出countA值為: " + countA);
+
+// let 只在所屬區塊(層級)內有效
