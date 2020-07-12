@@ -187,12 +187,33 @@ console.log(false || false);     //結果會是: false
 
 // 判斷式 if
 // https://www.w3schools.com/js/js_if_else.asp
-// 語法(Syntax): if (布林值) { 當布林值為true時, 會執行的城市內容; }
+// 語法(Syntax): if (布林值) { 當布林值為true時, 會執行的程式內容; }
 
 if (true) {
-  console.log("我是判斷是if, 且布林值為true的情況");
+  console.log("我是判斷是if, 且布林值為true");
 }
 
 if (false) {
-  console.log("我是判斷是if, 且布林值為false的情況");     //布林值為false判斷是不會執行
+  console.log("我是判斷是if, 且布林值為false");     //布林值為false時, 判斷式不會執行
 }
+
+// if...else... 否則
+// 語法(Syntax): if (布林值) { 當布林值為true時, 會執行的程式內容; } else{ 當布林值為false時, 會執行的程式內容; }
+
+var boolTest = true;
+
+if (boolTest) {
+  console.log("boolTese布林值為true!");
+} else {
+  console.log("boolTese布林值為false!");
+}
+// 當布林值為true, 程式執行完if之後就算完成執行判斷式, 不會再去執行else
+
+var boolTest2 = false;
+
+if (boolTest2) {
+  console.log("boolTese2布林值為true!");
+} else {
+  console.log("boolTese2布林值為false!");
+}
+// 當布林值為false, 程式會跳過if, 直接執行else
