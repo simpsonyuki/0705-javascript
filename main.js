@@ -184,3 +184,15 @@ console.log(true || true);       //結果會是: true
 console.log(true || false);      //結果會是: true
 console.log(false || true);      //結果會是: true
 console.log(false || false);     //結果會是: false
+
+// 判斷式 if
+// https://www.w3schools.com/js/js_if_else.asp
+// 語法(Syntax): if (布林值) { 當布林值為true時, 會執行的城市內容; }
+
+if (true) {
+  console.log("我是判斷是if, 且布林值為true的情況");
+}
+
+if (false) {
+  console.log("我是判斷是if, 且布林值為false的情況");     //布林值為false判斷是不會執行
+}
