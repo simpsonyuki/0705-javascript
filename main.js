@@ -223,8 +223,31 @@ if (boolTest2) {
 var score = document.getElementById("score");
 var result = document.getElementById("result");
 
-// 用onchange測試是否能成功執行動作
+// 用onchange測試是否能成功執行動作, 測試沒問題即可註解掉
 // onchange :當有所變更時則執行後方程式內容
+// score.onchange = () => {
+//   result.innerText="變更中...";
+// }
+
+// 設定條件:
+// 當分數 >=60 : 結果顯示為"及格"
+// 當分數 >=40 : 結果顯示為"補考"
+// 當分數 <40  : 結果顯示為"死當"
+
 score.onchange = () => {
-  result.innerText="變更中...";
+  var s = parseInt(score.value);    //取得score的值, 但因為得到的會是"文字字串", 所以要用parseInt把文字轉為整數
+
+  if (s >= 60){
+    result.innerText="分數 "+ s +"分：及格";
+  } 
+  else if (s >= 40){
+    result.innerText="分數 "+ s +"分：補考";
+  }
+  else {
+    result.innerText="分數 "+ s +"分：死當";
+  }
+  // 最後這段也可以寫成 else (s<40){}
+  
 }
+// 順序:
+// if(只能在第一位) → else if(可以有無限多組) → else(只能在最後面)
