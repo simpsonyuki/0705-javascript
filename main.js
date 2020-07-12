@@ -270,10 +270,16 @@ var products = ["冰美式", "星冰樂", "巧克力可可"]
 for (let i = 0; i < products.length; i++) {
   console.log(products[i]);
 }
-
+// getElementsByClassName: 以類別名稱選取複數元素, 得出之結果會是一"陣列"
 var ps = document.getElementsByClassName("products");
 // console.log(ps);
 
 for (let i = 0; i < ps.length; i++) {
   ps[i].innerText=products[i];
 }
+
+// const 常數 
+// 特色不能被變更
+// https://www.w3schools.com/js/js_const.asp
+const pi = 3.14159;
+pi = 5;   // 執行到此會出現錯誤, 因為pi的值必須為3.14159, 且不能被變更
